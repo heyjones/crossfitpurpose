@@ -1,0 +1,382 @@
+/*
+Theme Name: CrossFit Purpose
+Theme URI: http://www.crossfitpurpose.com
+Author: Hey Jones!
+Author URI: http://www.heyjones.com
+Description: 
+Version: 0.1
+*/
+*//*
+@import url(http://fonts.googleapis.com/css?family=Economica:400,700);
+@font-face{
+    font-family: 'Boston Traffic';
+    src: url('font/boston_traffic-webfont.eot');
+    src: url('font/boston_traffic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/boston_traffic-webfont.woff') format('woff'),
+         url('font/boston_traffic-webfont.ttf') format('truetype'),
+         url('font/boston_traffic-webfont.svg#capture_itregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	background: #222 url('img/body.jpg');
+	color: #ccc;
+	font-family: Helvetica;
+	font-size: 16px;
+	font-weight: lighter;
+}
+a{
+	color: #080;
+	text-decoration: none;
+}
+h1, h2, h3, h4, p{
+	margin: 20px 0px;
+}
+h1{
+	background: url('img/h1.png');
+	background-size: 100% 100%;
+	color: #222;
+	font-family: 'Boston Traffic';
+	font-weight: 400;
+	font-size: 3em;
+	padding: 10px;
+}
+h1 a{
+	color: #222;
+}
+	h2{
+		color: #eee;
+		font-family: 'Boston Traffic';
+		font-size: 2em;
+		font-weight: 400;
+	}
+	h3{
+		background: url('img/h3.png');
+		background-size: 100% 100%;
+		color: #fff;
+		font-family: Helvetica;
+		font-size: 1.25em;
+		font-weight: lighter;
+		padding: 10px;
+	}
+		h3 a{
+			color: #fff;
+		}
+	h4{
+		background: url('img/h4.png');
+		background-size: 100% 100%;
+		color: #080;
+		font-size: 1.25em;
+		padding: 10px;
+	}
+	p{
+		line-height: 1.5em;
+	}
+		p.small{
+			color: #ccc;
+			font-size: 0.75em;
+			line-height: 0.75em;
+		}
+hr{
+	background: #444;
+	border: none;
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: 20px 0px;
+}
+#title{
+	background: url('img/title.jpg') no-repeat center center;
+	background-size: 100%;
+	-webkit-filter: grayscale(100%); 
+	height: 300px;
+	margin: 0px;
+	position: relative;
+	width: 960px;
+}
+	#title a{
+		background: url('img/logo.png');
+		display: block;
+		height:140px;
+		left: 290px;
+		line-height: 140px;
+		overflow: hidden;
+		position: absolute;
+		text-indent: 380px;
+		top: 80px;
+		width: 380px;
+	}
+#excerpt{
+	background: url('img/h4.png') no-repeat center center;
+	background-size: 100%;
+	height: 300px;
+	position: relative;
+	width: 620px;
+}
+	#excerpt p{
+		bottom: 0px;
+		color: #fff;
+		font-size: 24px;
+		padding: 20px;
+		position: absolute;
+		text-shadow: 0px 1px 1px #000;
+	}
+#join{
+	display: none;
+}
+	#join a{
+		background: #080;
+		color: #fff;
+		display: inline-block;
+		height: 20px;
+		line-height: 20px;
+		padding: 10px;
+		text-align: center;
+		width: 120px;
+	}
+#menu{
+	background: #111;
+	border-top: solid 5px #080;
+	position: relative;
+	margin: 0px;
+	width: 960px;
+}
+	#menu ul{
+		float: left;
+	}
+		#menu li{
+			display: inline;
+		}
+			#menu li.current-menu-item a{
+				background: #000;
+				color: #fff;
+			}
+			#menu a{
+				color: #999;
+				display: inline-block;
+				padding: 20px 10px;
+			}
+				#menu a:hover{
+					color: #ccc;
+				}
+#social{
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	height: 32px;
+	line-height: 32px;
+	margin: 0px;
+	padding: 0px 10px;
+	position: fixed;
+	top: 0px;
+	width: 940px;
+	z-index: 1000;
+}
+	#social ul{
+		float: right;
+		margin-top: 3px;
+		text-align: right;
+	}
+		#social ul li{
+			display: inline;
+			height: 24px;
+			width: 24px;
+		}
+			#social ul li a{
+				background-position: 0px 0px;
+				background-repeat: no-repeat;
+				background-size: 24px 24px;
+				display: inline-block;
+				height: 24px;
+				overflow: hidden;
+				padding: 0px;
+				text-indent: 24px;
+				width: 24px;
+			}
+				#social a.facebook{
+					background-image: url('img/facebook.png');
+				}
+				#social a.google{
+					background-image: url('img/google.png');
+				}
+				#social a.instagram{
+					background-image: url('img/instagram.png');
+				}
+				#social a.twitter{
+					background-image: url('img/twitter.png');
+				}
+				#social a.yelp{
+					background-image: url('img/yelp.png');
+					background-position: 3px 3px;
+					background-size: 18px 18px;
+				}
+				#social a.youtube{
+					background-image: url('img/youtube.png');
+				}
+#container{
+	background: #333 url('img/container.jpg');
+	display: table;
+	padding-bottom: 10px;
+}
+#photos{
+}
+	#photos img{
+		margin: 0px 10px 10px 0px;
+	}
+		#photos img:nth-child(3n){
+			margin: 0px 0px 10px 0px;
+		}
+.movement{
+	padding: 10px;
+	position: relative;
+}
+.movement:hover{
+	background: #444;
+}
+	.movement_quantity{
+		background: #080;
+		border-radius: 20px;
+		color: #fff;
+		display: inline-block;
+		font-size: 20px;
+		font-weight: bold;
+		height: 40px;
+		line-height: 42px;
+		margin-right: 10px;
+		text-align: center;
+		width: 40px;
+	}
+	.movement_title{
+		color: #fff;
+		font-size: 20px;
+		font-weight: bold;
+		margin-right: 10px;
+	}
+	.movement_description{
+	}
+	.movement_help{
+		background: #222;
+		border-radius: 10px;
+		color: #666;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: bold;
+		height: 20px;
+		line-height: 22px;
+		margin-right: 10px;
+		text-align: center;
+		width: 20px;	
+	}
+	.movement_shit{
+		display: none;
+		margin-top: 10px;
+	}
+		.movement_desc{
+			background: #222;
+			display: inline-block;
+			padding: 10px;
+			width: 580px;
+		}
+	.movement_type{
+		background: #222 url('img-new/movements_movement_type_bodyweight.png') no-repeat center center;
+		display: inline-block;
+		height: 60px;
+		line-height: 60px;
+		overflow: hidden;
+		position: absolute;
+		right: 0px;
+		text-indent: 60px;
+		top: 0px;
+		width: 60px;
+	}
+
+.movement_list{
+	height: 104px;
+	padding: 10px;
+	position: relative;
+	width: 200px!important;
+}
+	.movement_list:hover{
+		background: #444;
+	}
+input, textarea{
+	border: solid 1px #ccc;
+	font-family: Helvetica;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 10px;
+}
+label{
+	padding: 10px;
+}
+img.alignleft{
+	float: left;
+	margin: 0px 20px 20px 0px;
+}
+#submit, .wpcf7-submit{
+	background: #060;
+	border: none;
+	color: #fff;
+	padding: 10px;
+}
+	.wpcf7-not-valid-tip{
+		background: none;
+		border: none;
+		left: 0px;
+		top: 0px;
+		width: auto;
+		padding: 10px;
+	}
+#coupon{
+	background: #fff;
+	border: dashed 4px #999;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+}
+#wp-calendar{
+	width: 100%;
+}
+	#wp-calendar caption{
+		background: url('img/h3.png');
+		background-size: 100% 100%;
+		color: #fff;
+		font-family: Helvetica;
+		font-size: 1.25em;
+		font-weight: lighter;
+		padding: 10px;
+	}
+	#wp-calendar th{
+		background: url('img/h4.png');
+		background-size: 100% 100%;
+		color: #fff;
+		font-family: Helvetica;
+		font-size: 1em;
+		font-weight: lighter;
+		padding: 10px;
+		width: 14%;
+	}
+	#wp-calendar td{
+		font-size: 2em;
+		height: 88px;
+		text-align: center;
+		vertical-align: middle;
+	}
+		#today{
+			background: #333;
+			border: solid 1px #666;
+		}
+#footer{
+	color: #666;
+	display: table;
+	font-size: 0.75em;
+	margin: 20px 0px;
+}
+	#footer a{
+		color: #666;
+	}
+		#footer a:hover{
+			color: #999;
+		}
